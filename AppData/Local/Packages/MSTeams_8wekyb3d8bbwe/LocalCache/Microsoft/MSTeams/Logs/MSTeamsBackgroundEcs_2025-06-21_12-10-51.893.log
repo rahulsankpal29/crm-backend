@@ -1,0 +1,16 @@
+2025-06-21T06:40:51.019569+05:30 0x00003c5c <INFO> SingleThreadedWorkerWin: Waiting for Work on worker thread : TelemetryServiceWorker
+2025-06-21T06:40:51.063684+05:30 0x00001440 <INFO> TelemetryService: Sampling rules from previous session recovered
+2025-06-21T06:40:51.069132+05:30 0x00001440 <INFO> TelemetryService: InitOfficeDiagnosticLevel to OfficeDiagnosticLevel::Unset
+2025-06-21T06:40:51.069132+05:30 0x00001440 <INFO> BackgroundTaskBase: Registering msteamsupdate.exe as bgtask com server for task: TeamsTfwEcsTask
+2025-06-21T06:40:51.085104+05:30 0x00003938 <INFO> EcsBackgroundTask: Starting ecs background task
+2025-06-21T06:40:51.085104+05:30 0x00003938 <INFO> TelemetryService: Restored sampling rules from previous session
+2025-06-21T06:40:51.086111+05:30 0x00003938 <INFO> vdi::VDIProvider: : VDIMode: 0000
+2025-06-21T06:40:51.132049+05:30 0x00003938 <INFO> TelemetryService: Sampling rules from previous session recovered
+2025-06-21T06:40:51.135043+05:30 0x00003938 <INFO> TelemetryService: No primary user detected during a SetUserTenantId Call, setting 9188040d-6c67-4c5b-b112-36a304b66dad as default tenant
+2025-06-21T06:40:51.135043+05:30 0x00003938 <INFO> TelemetryService: No primary user detected during a SetUserId Call, using guid instead
+2025-06-21T06:40:51.135043+05:30 0x00003938 <INFO> TelemetryService: Restored sampling rules from previous session
+2025-06-21T06:40:51.141043+05:30 0x00003938 <INFO> EcsSettings: Full build path /BuildSettings/WebView2Canary/x64/latestVersion
+2025-06-21T06:40:51.142043+05:30 0x00003938 <INFO> EcsFetchCompletion: Ecs settings are already up to date
+2025-06-21T06:40:51.148045+05:30 0x00003938 <INFO> EcsBackgroundTask: Completed ecs background task
+2025-06-21T06:40:52.232606+05:30 0x00001440 <INFO> TelemetryService: Telemetry service stopped
+2025-06-21T06:40:52.235607+05:30 0x00001440 <INFO> TelemetryService: Telemetry service stopped
