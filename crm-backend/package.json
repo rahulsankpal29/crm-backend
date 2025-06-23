@@ -1,0 +1,8 @@
+{
+  "name": "crm-backend",
+  "version": "1.0.0",
+  "description": "CRM backend using Java Spring Boot",
+  "main": "index.js",
+  "author": "Rahul Sankpal",
+  "license": "ISC"
+}
