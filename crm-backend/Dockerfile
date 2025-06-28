@@ -1,11 +1,14 @@
 # Use base image with Java 17
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 
 # Set working directory
 WORKDIR /app
 
-# Copy built jar file
+# Copy JAR file
 COPY target/*.jar app.jar
 
-# Run the jar
+# Expose port (Railway expects this)
+EXPOSE 8081
+
+# Run the JAR
 ENTRYPOINT ["java", "-jar", "app.jar"]
