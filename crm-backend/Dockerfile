@@ -1,14 +1,8 @@
-# Use base image with Java 17
-FROM eclipse-temurin:17-jdk-jammy
+FROM maven:3.8.5.openjdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Set working directory
-WORKDIR /app
-
-# Copy JAR file
-COPY target/*.jar app.jar
-
-# Expose port (Railway expects this)
+FROM openjdk:17.0.1-jdk-slim
+COPY --from=build /target/crm-backend-0.0.1-SNAPSHOT.jar crm-backend.jar 
 EXPOSE 8081
-
-# Run the JAR
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","crm-backend.jar"]
