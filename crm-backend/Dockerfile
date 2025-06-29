@@ -1,8 +1,8 @@
 # ---------- Stage 1: Build ----------
 FROM maven:3.8.5-openjdk-17 AS build
 WORKDIR /app
-COPY . .         # Copy everything into /app
-WORKDIR /app/crm-backend  # 👈 Go into the actual Maven project folder
+COPY . .                      # Copy all files into /app
+WORKDIR /app/crm-backend      # 🔥 Go into inner directory with pom.xml
 RUN mvn clean package -DskipTests
 
 # ---------- Stage 2: Run ----------
