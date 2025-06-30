@@ -1,7 +1,8 @@
 # ---------- Stage 1: Build ----------
 FROM maven:3.8.5-openjdk-17 AS build
 WORKDIR /app
-COPY crm-backend/ .         # ✅ Copy the actual Maven project only
+COPY crm-backend/ .     # ✅ copy contents of crm-backend/ into /app/
+RUN ls -la              # ✅ see what got copied (debug)
 RUN mvn clean package -DskipTests
 
 # ---------- Stage 2: Run ----------
